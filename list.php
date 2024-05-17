@@ -30,7 +30,7 @@ class ListData {
             $keyword    = isset($_GET['keyword']) ? $_GET['keyword'] : '';
 
             $optParams  = array(
-                'pageSize'  => 10,
+                'pageSize'  => 5,
                 'q'         => "name contains '$keyword'",
                 'pageToken' => $pageToken,
                 'fields'    => 'nextPageToken, files(id, name, mimeType, description, createdTime, modifiedTime, size, webViewLink, webContentLink, owners, parents, shared, permissions)'
